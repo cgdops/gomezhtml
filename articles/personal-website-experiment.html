@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>An Experiment in Personal Website Building</title>
+    <meta name="description" content="I hypothesize that people would build more personal websites if it was easier to do so. In this article I explore how we might make website building easier.">
+    <style>
+        body {
+            color: #000000;
+            background-color: #ffffff;
+        }
+        a {
+            color: #0000ee;
+            display: inline-block;
+            padding: 8px;
+            line-height: 28px;
+        }
+        a:visited {
+            color: #551a8b;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav li {
+            margin: 8px 0;
+        }
+        nav a {
+            padding: 4px 6px;
+        }
+        button {
+            color: #000000;
+            background-color: #ffffff;
+            border: 2px solid #000000;
+            padding: 12px 24px;
+            min-height: 44px;
+            min-width: 44px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input, textarea {
+            padding: 12px;
+            min-height: 44px;
+            font-size: 16px;
+            margin-bottom: 16px;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: #ffffff;
+                background-color: #000000;
+            }
+            a {
+                color: #6eb5ff;
+            }
+            a:visited {
+                color: #d896ff;
+            }
+            button {
+                color: #ffffff;
+                background-color: #000000;
+                border: 2px solid #ffffff;
+            }
+            input, textarea {
+                color: #ffffff;
+                background-color: #1a1a1a;
+                border: 1px solid #ffffff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html"><- Back to Index</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>An Experiement on Building a Website</h1>
+        <p>I think more people would have personal websites if it was easier to make them. Not just that either, I've been building websites for over 15 years and I still get stuck at the start of a new project pretty often.</p>
+        <p>Let's explore:</p>
+        <ul>
+            <li><a href="#challenges">Challenges</a></li>
+            <li><a href="#current-options">Current Options</a></li>
+            <li><a href="#proposed-solutions">Proposed Solutions</a></li>
+            <li><a href="#notes">Experiment Notes</a></li>
+        </ul>
+        
+    </header>
+
+    <main>
+        <section id="challenges">
+            <h2>What are the obstacles for individuals to build a website?</h2>
+            <p>From my personal experience, people hire me because making a website gets complicated <em>fast</em>. Sites are multi-media combinations of 3 coding languages (at least), HTML, CSS, JavaScript. And that's not going into the domain and hosting skills needed. Several services attempt to lower this barrier to entry. And now with AI, the barriers are coming lower every day.</p>
+            <p>Let's take a look at what options people have available today.</p>
+        </section>
+        <section id="current-options">
+            <h2>Current Options</h2>
+            <p>I think there are more options available than ever to get a personal site online:</p>
+            <ul>
+                <li>squarespace.com</li>
+                <li>wix.com</li>
+                <li>webflow.com</li>
+                <li>wordpress.com</li>
+                <li><em>Insert favorite WYSIWYG here...</em></li>
+            </ul>
+            <p>However, for this experiement I'm going to test 2 that I really believe in:</p>
+            <ul>
+                <li>Lovable.dev</li>
+                <li>Pure HTML</li>
+            </ul>
+            <p>I chose these because they are on the complete opposite sides of the world in terms of tech but conceptually result in the same outcome. A publicly visible personal website. You might know that websites can be discovered in many different ways. I also want to test which of these 2 options results in better <em>performance</em>.</p>
+        </section>
+        <section id="proposed-solutions">
+            <h2>Proposed Solutions</h2>
+            <p>I'm going to use this site as a baseline. And I'm going to use a brand new lovable account as the variable. The process is simple, ask Lovable to create a personal website (like this one) and post to it every day. As far as instructions, I'm going to keep them as basic as possible. "Make me a website", "Make sure its optimized for SEO", "make the logo bigger"; you know, the cringe requests I get from clients every day. Then, just sit back and let it do it's thing.</p>
+            <p>I'm going to track and measure both sites, since they're both brand spankin new, and see how they are performing relative to the effort I've put into them.</p>
+        </section>
+        <section id="notes">
+            <h3>Notes</h3>
+            <p>Speaking of effort, here's what I've done for this pure html site:</p>
+            <ul>
+                <li>Created an HTML boilerplate with basic HTML code</li>
+                <li>Create a simple inline CSS style tag on each page to ensure I score 100 on a11y metrics</li>
+                <li>Then, I just copy paste stuff around to create new pages, etc.</li>
+                <li>I use VSCode to make updates, create posts</li>
+                <li>Lastly, I commit the changes to a github repo where I also host the website on github pages (for free).</li>
+            </ul>
+            <h4>Pros</h4>
+            <ul>
+                <li>Easy to maintain</li>
+                <li>Low complexity</li>
+                <li>Accessible from anywhere</li>
+                <li>Perfect 100/100 on-page tech scores (Lighthouse)</li>
+                <li>Totally free</li>
+            </ul>
+            <h4>Cons</h4>
+            <ul>
+                <li>Looks like shit (to most)</li>
+                <li>Takes a little longer to write content</li>
+                <li>Requires some above average coding skills</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 Christian Gomez. All rights reserved.</p>
+    </footer>
+</body>
+</html>
